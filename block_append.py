@@ -1,3 +1,4 @@
+
 import requests
 from openpyxl import load_workbook
 
@@ -14,7 +15,7 @@ headers={
     }
 
 # Data Initialisation
-wb_path = 'Youtube DL/Summary.xlsx'
+wb_path = '/Users/kuangbin/Desktop/bei-le-si.xlsx'
 wb = load_workbook(wb_path)
 ws = wb.active
 
@@ -23,12 +24,12 @@ ws = wb.active
 print(block_append_url)
 for i in range(2,30):
     num = str(i)
-    img1 = str(ws['C'+num].value)+'\n'+'\n'
-    img2 = str(ws['D'+num].value)+'\n'+'\n'
-    img3 = str(ws['E'+num].value)+'\n'+'\n'
-    img4 = str(ws['F'+num].value)+'\n'+'\n'
-    img5 = str(ws['G'+num].value)+'\n'+'\n'
-    body = '---\n' + str(ws['A'+num].value)+'：\n'+str(ws['B'+num].value)+img1+img2+img3+img4+img5
+    img1 = str(ws['G'+num].value)+'\n'+'\n'
+    img2 = str(ws['H'+num].value)+'\n'+'\n'
+    img3 = str(ws['I'+num].value)+'\n'+'\n'
+    img4 = str(ws['J'+num].value)+'\n'+'\n'
+    img5 = str(ws['K'+num].value)+'\n'+'\n'
+    body = '---\n' + str(ws['C'+num].value)+'：\n'+str(ws['D'+num].value)+img1+img2+img3+img4+img5
     data = {
         "children":
         [
