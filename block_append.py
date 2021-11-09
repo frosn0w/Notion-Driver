@@ -14,7 +14,8 @@ headers={
     }
 
 # Data Initialisation
-wb = load_workbook('Youtube DL/Summary.xlsx')
+wb_path = 'Youtube DL/Summary.xlsx'
+wb = load_workbook(wb_path)
 ws = wb.active
 
 
