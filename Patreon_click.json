@@ -1,0 +1,42 @@
+{
+  "_id": "patreon_Click",
+  "startUrl": ["https://www.patreon.com/user/posts?u=80821958"],
+  "selectors": [
+    {
+      "id": "Click Body",
+      "parentSelectors": ["_root"],
+      "type": "SelectorElementClick",
+      "clickElementSelector": ".gkqJBN button",
+      "clickElementUniquenessType": "uniqueText",
+      "clickType": "clickMore",
+      "delay": 500,
+      "discardInitialElements": "do-not-discard",
+      "multiple": true,
+      "selector": ".blZsSd div div.gkqJBN"
+    },
+    {
+      "id": "Click Comments",
+      "parentSelectors": ["_root"],
+      "type": "SelectorElementClick",
+      "clickElementSelector": ".sc-1qsig82-0 button",
+      "clickElementUniquenessType": "uniqueText",
+      "clickType": "clickMore",
+      "delay": 1000,
+      "discardInitialElements": "do-not-discard",
+      "multiple": true,
+      "selector": "div.sc-1qsig82-0"
+    },
+    {
+      "id": "Click Replay",
+      "parentSelectors": ["_root"],
+      "type": "SelectorElementClick",
+      "clickElementSelector": ".sc-1qsig82-1 button",
+      "clickElementUniquenessType": "uniqueText",
+      "clickType": "clickMore",
+      "delay": 1000,
+      "discardInitialElements": "do-not-discard",
+      "multiple": true,
+      "selector": "div.sc-1qsig82-2"
+    }
+  ]
+}
