@@ -1,0 +1,70 @@
+{
+  "_id": "aPatreon",
+  "startUrl": [
+    "https://www.patreon.com/user?u=80821958"
+  ],
+  "selectors": [
+    {
+      "id": "Homepage",
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorElementClick",
+      "clickElementSelector": "button.iqNlGP",
+      "clickElementUniquenessType": "uniqueText",
+      "clickType": "clickMore",
+      "delay": 2000,
+      "discardInitialElements": "do-not-discard",
+      "multiple": true,
+      "selector": "div.blZsSd"
+    },
+    {
+      "id": "Time",
+      "parentSelectors": [
+        "Detail"
+      ],
+      "type": "SelectorText",
+      "selector": "span.hsmwvg",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "Title",
+      "parentSelectors": [
+        "Detail"
+      ],
+      "type": "SelectorText",
+      "selector": ".sc-1di2uql-1.kxSoJv",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "Body",
+      "parentSelectors": [
+        "Detail"
+      ],
+      "type": "SelectorText",
+      "selector": ".sc-1di2uql-0.czEPnJ",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "Detail",
+      "parentSelectors": [
+        "Homepage"
+      ],
+      "type": "SelectorElement",
+      "selector": "_parent_",
+      "multiple": true
+    },
+    {
+      "id": "img",
+      "parentSelectors": [
+        "Detail"
+      ],
+      "type": "SelectorImage",
+      "selector": "img",
+      "multiple": true
+    }
+  ]
+}
